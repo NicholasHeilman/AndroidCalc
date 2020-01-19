@@ -104,5 +104,25 @@ public class MainActivity extends AppCompatActivity {
         btnDot.setOnClickListener(calcListner);
         btnEqual.setOnClickListener(calcListner);
 
+        final Button delete = findViewById(R.id.btnDelete);
+        delete.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    String displayElements = displayScreen.getText().toString();
+                    int length = displayElements.length();
+                    if(length > 0){
+                        displayElements = displayElements.substring(0, length-1);
+                        displayScreen.setText(displayElements);
+                    }
+                }
+            });
+        final Button clear =findViewById(R.id.btnClear);
+        clear.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                displayScreen.setText("");
+            }
+        });
     }
-}
+    }
+
