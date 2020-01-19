@@ -37,52 +37,52 @@ public class MainActivity extends AppCompatActivity {
                 final int id = v.getId();
                 switch (id){
                     case R.id.btn0:
-
+                        displayScreen.append("0");
                         break;
                     case R.id.btn1:
-
+                        displayScreen.append("1");
                         break;
                     case R.id.btn2:
-
+                        displayScreen.append("2");
                         break;
                     case R.id.btn3:
-
+                        displayScreen.append("3");
                         break;
                     case R.id.btn4:
-
+                        displayScreen.append("4");
                         break;
                     case R.id.btn5:
-
+                        displayScreen.append("5");
                         break;
                     case R.id.btn6:
-
+                        displayScreen.append("6");
                         break;
                     case R.id.btn7:
-
+                        displayScreen.append("7");
                         break;
                     case R.id.btn8:
-
+                        displayScreen.append("8");
                         break;
                     case R.id.btn9:
-
+                        displayScreen.append("9");
                         break;
                     case R.id.btnPlus:
-
+                        displayScreen.setText("+");
                         break;
                     case R.id.btnMinus:
-
+                        displayScreen.setText("-");
                         break;
                     case R.id.btnMultiply:
-
+                        displayScreen.setText("*");
                         break;
                     case R.id.btnDivide:
-
+                        displayScreen.setText("/");
                         break;
                     case R.id.btnDot:
-
+                        displayScreen.append(".");
                         break;
                     case R.id.btnEqual:
-
+                        displayScreen.setText("=");
                         break;
                 }
             }
@@ -103,7 +103,6 @@ public class MainActivity extends AppCompatActivity {
         btnDivide.setOnClickListener(calcListner);
         btnDot.setOnClickListener(calcListner);
         btnEqual.setOnClickListener(calcListner);
-
 
     }
 }

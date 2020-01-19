@@ -12,12 +12,32 @@
         android:layout_height="200dp"
         android:textColor="#ffffff"
         android:textSize="50dp"
-        android:gravity="bottom"
+        android:gravity="bottom|right"
         android:id="@+id/display"
         android:background="#000000"
         android:layout_margin="10dp"
-
      />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Clear"
+            android:textSize="25sp" />
+        <Button
+            android:id="@+id/btnBackspace"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Delete"
+            android:textSize="25sp" />
+
+    </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -49,9 +69,9 @@
             android:layout_width="0dp"
             android:layout_height="match_parent"
             android:layout_weight="1"
+            android:background="#fe9241"
             android:text="+"
-            android:textSize="25sp"
-            android:background="#fe9241"/>
+            android:textSize="25sp" />
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -156,7 +176,7 @@
             android:layout_weight="1"
             android:text="/"
             android:textSize="25dp"
-            android:background="#fe9241"/>
+            android:background="#fe9241" />
     </LinearLayout>
 
 </LinearLayout>
