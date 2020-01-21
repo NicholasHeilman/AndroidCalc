@@ -71,7 +71,8 @@
             android:layout_weight="1"
             android:background="#fe9241"
             android:text="+"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:layout_margin="5dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -106,7 +107,8 @@
             android:layout_weight="1"
             android:text="-"
             android:textSize="25sp"
-            android:background="#fe9241"/>
+            android:background="#fe9241"
+            android:layout_margin="5dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -141,7 +143,8 @@
             android:layout_weight="1"
             android:text="X"
             android:textSize="25sp"
-            android:background="#fe9241"/>
+            android:background="#fe9241"
+            android:layout_margin="5dp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
@@ -154,7 +157,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="."
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:background="#fe9241"
+            android:layout_margin="5dp"/>
         <Button
             android:id="@+id/btn0"
             android:layout_width="0dp"
@@ -168,7 +173,9 @@
             android:layout_height="match_parent"
             android:layout_weight="1"
             android:text="="
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:background="#fe9241"
+            android:layout_margin="5dp"/>
         <Button
             android:id="@+id/btnDivide"
             android:layout_width="0dp"
@@ -176,7 +183,8 @@
             android:layout_weight="1"
             android:text="/"
             android:textSize="25dp"
-            android:background="#fe9241" />
+            android:background="#fe9241"
+            android:layout_margin="5dp"/>
     </LinearLayout>
 
 </LinearLayout>

@@ -9,6 +9,12 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
+    boolean IsOpPressed = false;
+    double firstNumber = 0;
+    int secondNumberIndex = 0;
+    char currentOp;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +36,8 @@ public class MainActivity extends AppCompatActivity {
         final Button btnPlus = findViewById(R.id.btnPlus);
         final Button btnMinus = findViewById(R.id.btnMinus);
         final Button btnMultiply = findViewById(R.id.btnMultiply);
+
+
 
         final View.OnClickListener calcListner = new View.OnClickListener() {
             @Override
@@ -67,22 +75,34 @@ public class MainActivity extends AppCompatActivity {
                         displayScreen.append("9");
                         break;
                     case R.id.btnPlus:
-                        displayScreen.setText("+");
+                        String displayContent = displayScreen.getText().toString();
+                        displayScreen.append("+");
+                        IsOpPressed=true;
+                        secondNumberIndex = displayScreen.length();
+                        firstNumber = Double.parseDouble(displayContent);
+
+                        currentOp = '+';
                         break;
                     case R.id.btnMinus:
-                        displayScreen.setText("-");
+                        displayScreen.append("-");
                         break;
                     case R.id.btnMultiply:
-                        displayScreen.setText("*");
+                        displayScreen.append("*");
                         break;
                     case R.id.btnDivide:
-                        displayScreen.setText("/");
+                        displayScreen.append("/");
                         break;
                     case R.id.btnDot:
                         displayScreen.append(".");
                         break;
                     case R.id.btnEqual:
-                        displayScreen.setText("=");
+
+//                        if(IsOpPressed){
+//                            if(currentOp=='='){
+//                                double secondNumber = Double.parseDouble(displayContent.substring(secondNumberIndex, displayContent.length()));
+//                                displayScreen.setText(String.valueOf(secondNumber));
+//                            }
+//                        }
                         break;
                 }
             }
